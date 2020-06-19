@@ -1,14 +1,24 @@
 {
-  "development": {
-    "proxy": {
-      "proxies": ["/api"]
+    "development": {
+        "proxy": {
+            "origin": "https://dev84474.service-now.com/",
+            "port": 3000,
+            "headers": {},
+            "proxies": [
+                "/api"
+            ]
+        }
+    },
+    "styles": {
+        "themes": [{
+            "module": "@servicenow/sass-theme",
+            "main": [
+                "theme.scss"
+            ],
+            "copyFiles": [
+                "type/*",
+                "*.scss"
+            ]
+        }]
     }
-  },
-  "styles": {
-      "themes": [{
-        "module": "@servicenow/sass-theme",
-        "main": ["theme.scss"],
-        "copyFiles": ["type/*", "*.scss"]
-      }]
-  }
 }

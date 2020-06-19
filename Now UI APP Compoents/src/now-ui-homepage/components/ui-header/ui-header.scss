@@ -1,0 +1,23 @@
+.ui-header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #363636;
+    color: #ffffff;
+    * {
+        display: inherit;
+        align-items: inherit;
+        justify-content: inherit;
+    }
+    .brand {
+        font-weight: 600;
+        font-size: 20px;
+        margin: 0px 20px;
+    }
+    .main-actions {
+        * {
+            margin-right: 20px;
+        }
+    }
+}
