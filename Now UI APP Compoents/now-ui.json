@@ -1,8 +1,36 @@
 {
-	"components": {
-	    "x-300949-ntt-tm-day-off-list": {
-	        "innerComponents": []
-	    }
-	},
-	"scopeName": "x_300949_now_app"
+    "components": {
+        "x-300949-ntt-tm-day-off-list": {
+            "innerComponents": []
+        },
+        "x-300949-now-users-table": {
+            "actions": [{
+                "name": "FETCH_USERS_SUCCEEDED",
+                "description": "Fetch User Successded"
+            }],
+            "uiBuilder": {
+                "associatedTypes": [
+                    "global.core"
+                ],
+                "label": "Now Users Table",
+                "icon": "user-outline",
+                "description": "Fetch 10 Users"
+            }
+        },
+        "x-300949-checklist-example": {
+            "actions": [{
+                "name": "CHECKLIST_ITEM_ADD",
+                "description": "CHECKLIST ITEM ADDED"
+            }],
+            "uiBuilder": {
+                "associatedTypes": [
+                    "global.core"
+                ],
+                "label": "Checklist module",
+                "icon": "check-fill",
+                "description": "Checklist module"
+            }
+        }
+    },
+    "scopeName": "x_300949_now_app"
 }

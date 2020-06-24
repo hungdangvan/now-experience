@@ -24,7 +24,7 @@ createCustomElement('users-table', {
       ]
     },
     showFilters: {
-      default: true
+      default: false
     }
   },
   transformState(state) {
